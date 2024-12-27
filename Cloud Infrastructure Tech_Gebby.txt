@@ -1,0 +1,54 @@
+--- CLOUD --- Bpk. Abdul Salam part Cloud Infrastructure Technology
+Day-to-day jobdesk: Otomatisasi (backup data) dan monitoring, kuantisasi, billing
+
+Cloud computing adalah 
+- environment global yang bisa diakses dari mana pun karena terhubung dengan internet. 
+- Pengiriman layanan komputasi termasuk server, jaringan, penyimpanan, perangkat lunak melalui internet untuk menawarkan inovasi yang lebih cepat, sumber daya yang fleksibel, dan skala yang ekonomis. 
+
+Jenis dan tipe Cloud Computing
+- On Premises
+- IaaS:
+- PaaS: Apache Kafka
+- SaaS : Microsoft 365
+Byond berjalan di Iaas dan Paas, serta core bankingnya di on-premises
+
+Type: 
+1. Private: pemakaian tech cloud untuk kepentingan perusahaan saja yang sifatnya private 
+2. Public: Penyimpanan setiap data dan informasi pada internet dengan model layanan yang sifatnya publik
+3. Hybrid
+
+Manfaat Cloud Computing (Data security, cost efficiency, scalability, mobility and availability, )
+1. Human error
+2. Unexpected updates & patches
+3. Power outages
+4. Fire or explosions
+5. Server rooms issues
+6. Earthquakes
+
+Provider Cloud Computing : AWS, GCP, Alibaba, Microsoft Azure, Oracle
+
+Aplikasi di BSI yang sudah jalan di cloud adalah Byond dan Documentum
+Documentum adalah aplikasi Document Management System untuk mengelola dokumen nasabah. Lebih ke image
+
+Tech-stack BYOND
+- Public Security: Imperva
+- API Gateway: API GW Internal ESB
+- Middleware: ESB (SoftwareAG)
+- Containerization: Openshift (Redhat)
+- Audit Loge: ELK (Alven Open Search)
+- Object Storage (Cloud Storage)
+- Caching: Cloud Memorystorage
+- Message Queue: Kafka (Confluent)
+- Database: Oracle
+- Security PIN: HSM
+- Application Performance Monitoring: Dynatrace
+- Streaming Processing: Kafka (Confluent)
+- Mobile Application: ReactNative
+
+
+
+
+Implementasi Cloud Computing
+
+Regulasi di OJK mengatur data nasabah perbankan harus disimpan pada provider cloud yang data centernya berada di Indonesia. 
+

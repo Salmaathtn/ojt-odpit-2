@@ -1,0 +1,77 @@
+Data Center Management (DCM)
+
+Tugas: Memelihara DC yang dimiliki sehingga dapat hidup sesuai dengan peraturan perusahaan. Menjaga dari sisi desain dan fasilitas. 
+
+Misalnya dibutuhkan aplikasi yang mampu beroperasi 24 jam dengan SLA 99%. Sehingga waktu downtime hanya sebesar += 1 menit per hari. 
+
+Bisnis akan menghitung berapa budget yang dibutuhkan untuk proyek data center tersebut. Tier data center terbagi menjadi tier 1-4 dan ini merepresentasikan kompleksitas dan SLA data center. 
+DC Rempoa, tier 2 
+DC Cibitung, tier 4 (sewa)
+
+Test HA untuk memastikan bahwa apabila perangkat di atasnya mati, perangkat lain masih bisa berfungsi dengan baik
+Tidak hanya data center, hal lain yang perlu diperhatikan adalah peringkat seperti server, storage, network, dan firewall (security). 
+Data center harus didesain sedemikian rupa sehingga jika terjadi satu simpul terputus, data center tetap bisa beroperasional sehingga beberapa hal seperti power dibuat redundant yang berasal dari 3 sources yakni PLN, internal, dan genset. 
+
+requirements storage tdak hanya besar storage namun juga performance. 
+SLA berbanding lurus dengan budget. Misalnya untuk menaikkan SLA membutuhkan tambahan server. 
+
+Antar server memiliki IP yang berbeda dan tidak memungkinkan user untuk berganti IP. Sehingga digunakan load balance antar server yang IPnya akan diakses user. 
+
+1. Disesuaikan dengan kebutuhan bisnis misalnya berapa SLA dan lain sebagainya
+2. Perencanaan infrastruktur dan aplikasi
+
+Subunit DCM
+DC facilities mengontrol masing-masing fisik (misalnya rak0 selama 24/7
+DC Administator
+Sys-Admin bertugas sejak kedatangan server hingga bisa diakses user 
+
+Pak Wibowo, IOG DH Improvement
+Tugas: mengembangkan system, infrastructure, dan dll; procurement dan supervising, tuning, memastikan perencanaan ISG dapat diimplementasikan atau tidak, analisis kebutuhan improvement fasilitas dan infrasctructure
+
+Data Center Infrastructure Design
+Data Center: suatu fasilitas yang digunakan untuk menempatkan sistem komputer dan komponen terkaitnya agar semua sistem informasi berjalan dengan baik. 
+Aspek: 1. Lokasi : berada di luar radius mitigasi bencana/gunung berapi (>15 km), cukup tersamarkan dari pengenalann public (tidak terekspose)
+2. Sarana Penunjang: catu daya dengan minimum 2 sumber pembangkit, generator listrik cadangan, uninterruptible power system (UPS)
+3. Keamanan: CCTV, access control, pengamanan selama 24 jam, automatic gas fire suppression system
+Tiers data center 1-4
+
+Equipment: Space design, mechanical, 
+
+System Infrastructure Design
+Ada 3 tiers: web > apk > database
+1. Web server: static vs dynamic content, serves web pages, web 2.0 and SaaS
+2. apk: business logic, data manipulation, 
+3. database: data storage
+
+Virtualization using Virtual Machine
+1. Lower number of physical servers and reduce hardware maintenance
+2. Consolidation strategy, increase space 
+3. prevent impact upgrades or changes application
+4. Easily duplicated
+5. Multiple OS on single hardware
+
+Storage Technologies:
+1. DAS (Direct Attached Storage)
+2. NAS (Network Attached Storage)
+3. SAN (Storage Area  Network)
+
+Microservices Infrastructure Design - RHEL Openshift yang menggunakan teknologi container dengan kelebihan
+1. Platform multi-cloud
+2. Isolasi: aplikasi dan sumber daya lainnya berjalan terpisah
+3. Security
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

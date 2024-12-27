@@ -1,0 +1,19 @@
+Materi
+
+Ibu Misi dari IT Infrastructure Operation Management & Optimization
+Terbagi menjadi 
+- IT Operation Liaison, Assurance & Overseas branchAnalyst: sebagai penghubung antara IOG dengan dept lainnya atau pihak  luar, menjaga IOG agar in-line terhadap tugas dan kewajiban terkait, mengurus IT ketika BSI hendak membuka cabang di luar negeri sehingga mampu menjaga IOG agar sesuai dengan prosedur dan peraturan perbankan yang berlaku
+
+- Melakukan monitoring, pengendalianm perencanaan, penggunaan anggaran OPEX IOG
+- Menyusun RSCA dan laporan kinerja IOG secara periodic
+- Mengelola proses pembayaran pihak ketiga unit IOG
+- Memantau dan mengontrol progress perbaikan atas hasil temuan audit untuk ditindaklanjuti oleh unit terkait dalam rangka peningkatan kinerja IOG (untuk unit kerja, proses, aplikasi)
+Audit Internal: ITA
+Audit Eksternal; Third parties seperti konsultan big-4, regulator, 
+
+- Menindaklanjuti permintaan review dan working policy and procedure dari unit kerja terkait
+- Mengoordinasi standar mutu ISO di masing-masing department
+- Mengelola aktivitas IT Operation Liaison and Assurance Officer
+- Melaksanaan tugas-tugas kedinasan dari department head sesuai dengan peran dan kompetensinya untuk mencapai target/standar yang ditetapkan secara efektif dan efisien
+
+

@@ -1,0 +1,78 @@
+Notulensi hari pertama Dept IT Operation Group (IOG)
+- Financing operations
+- Operation Development
+- Costumer Care
+- Financing Center
+- Business Continuity Management
+- SORH Operation
+
+IOG memastikan operasional berjalan dengan SOP. Melakukan monitoring agar operasi dan decision infrastruktur berjalan normal. Ada dept 6. Sehingga decision planning (ISG) akan membuat rencana strategi terkait proyek IT yang akan dilakukan dan berkoordinasi dengan developer (IDG). Lalu proses deploy/naik ke production dilakukan oleh IOG dan troubleshooting oleh ASP. IOG bisa dibilang garda terdepan yang memastikan operasional berjalan dengan baik. IOG harus mengetahui dan mengerti segala hal terkait sistem dan aplikasi. Menjaga kestabilan dalam layanan dan menjaga SLA yang saat ini mencapai 99%. Memperkecil resiko downtime. 
+
+Target: Ada datacenter HA (High Appability) dengan perbandingan 1:1. Sehingga apabila 1 server mati dapat dipindahkan dengan lebih smooth ke server lain. Ada DC4. Untuk menuju HA harus didukung oleh environment, skillset, dan tools yang memadai.
+
+IT Service Desk
+IT Implementation & Monitoring di Command Center
+Data Center Management
+IT Infrastructure/Network Environment
+IT Infrastructure Operation Management & Optimalization
+Cloud Infrastructure Management (New)
+
+Command center memastikan data yang dimonitoring. Testing akan dilakukan tiap 5 menit di Command Center. 
+Freeze yang dilakukan untuk mendeploy fitur baru pada layanan ke production. Freeze bertujuan untuk menjaga layanan menuju akhir bulan. 
+
+Misalnya aplikasi sudah live production, aplikasi memiliki garansi selama 3 bulan sebelum diserahkan ke ASP. 
+POV IOG sebagai pemilik sistem
+POV DBO sebagai nasabah
+
+IT Service Desk
+- IT Helpdesk
+- Desktop Peripheral
+- IT Solution Management
+
+Fungsi IT Service Desk secara umum
+
+IT Service Desk berperan sebagai front-endnya operation. Menerima laporan insiden dari user yakni KC atau kantor pusat pada aplikasi/jaringan yang tidak sesuai dengan seharusnya. Memberikan layanan Kepada user dan memberikan solusi terhadap insiden yang ada. Ketika user merasakan kendala terbagi menjadi 3, IT Helpdesk memberikan layanan terhadap gangguan dari sisi aplikasi baik core banking maupun tidak, kalo laptop/endpoint ke DP, ISM ini second layer apabila insiden tidak mampu dihadapi. Apabila masih tidak memungkinkan oleh ISM, maka insiden akan dieskalasi ke ASP.
+
+Adapun flow prosesnya adalah
+1. IH memiliki sistem ticketing di ITKU. Jika user menghadapi masalah maka user akan menginput ticketing di ITKU sesuai kategori permasalahan yang dihadapi. Sebelum  masuk ke ITKU user perlu memasukkan username dan password terlebih dahulu. User akan mengirimkan Request Incident Management. Setelah itu, IH akan memonitoring ticketing yang masuk pada ITKU. Contoh ketika T24 down, IOG akan mencari solusi cepat terhadap insiden yang dihadapi sementara ASP akan mencari root-cause (jangka panjang)
+2. DP memastikan endpoint telah sesuai dengan standarisasi. Adapun syarat yang harus dipenuhi adalah adanya security agent pada tiap endpoint. Selain itu, juga melakukan instalasi secara remote apabila telah diassess dan disetujui oleh CISO. CISO hanya memberikan regulasi dan standarisasi yang diperlukan sedangkan eksekusi dilakukan oleh IOG
+3. ISM
+
+Ticketing yang diterima IOG rata-rata 300-400 per hari dan harus diclosed pada hari tersebut juga karena berdampak terhadap SLA. Common issue terkait desktop yang terblokir oleh forescout dan peripheral (printer). 
+
+Prioritas dan SLA-nya
+1. LOW: Permasalahan yang tidak menganggu operasional user dan cabang dengan SLA 112 jam
+2. MEDIUM: Permasalahan yang menganggu operasional yang hanya pada user tertentu saja dengan SLA 16 jam
+3. HIGH: Permasalahan yang menganggu operasional tertentu dan memiliki impact yang tinggi dengan SLA 40 jam
+4. CRITICAL: Permasalahan yang tidak menyebabkan operasional terhenti secara global (massal) dengan SLA 3 jam
+
+Tools lain selain ITKU, IT Service Desk juga menggunakan Microsoft Intune (sebagai MDM/Mobile Device Management), menggantikan Ivanti untuk melakukan remote controlling terhadap desktop user yang mengalami kendala. Alasan berganti ke Microsoft Intune karena satu environment dengan Teams. Microsoft Intune securely manages identities, manages apps, and manages devices. 
+
+Agent  installed (pc, tablet, hp) > server repo inventory server (bare metal/servernya on-premises)
+Intune : agentless > device (pc, tablet, hp) enrolled > Intune SaaS
+
+IT NETWORK
+
+Ada 3 tim:
+1. Infrastructure lebih ke wiringnya. Manage server fisik
+2. Cabang (Router, switch, SDWAN, WN1/Head Office (Graha mandiri, wisma mandiri, danareksa, sudirman, the tower), WN2, menggunakan DNAC
+juga mencakup (KC, KCP, KFF, KFO, BFO, MKK) 
+
+topologi cabang.
+Ada 3 yakni PC, PP (pin pad), dan ATM yang terhubung dengan switch. Ada koneksi/tarikan kabel ke SDWAN dn Router. Sementara itu, MPLS itu terhubung dengan Router dan internet ke SDWAN. DWAN 
+3. Data Center
+DC dengan rasio 1:1 (diduplikasi sama persis). Artinya apabila 1 data center mati, maka layanan dapat pindah ke DC yang lain. 
+Ada istilah Server Farm yang menjadi tempat meletakkan semua server milik bank. Di bawahnya ada firewall dengan 3 tier yang berfungsi untuk memanage security (yang pegang CISO)
+Tier 1 untuk web, Tier 2 untuk app, tier 3 untuk database. Di bawah setiap firewall, ada load balance untuk menstabilkan traffic yang masuk/keluar server farm (yang pegang IOG)
+
+Core Banking > router > firewall > router provider > ekstranet (layanan internet pihak ketiga seperti bi-fast, mandiri, dan lain sebagainya yang di luar BSI)
+
+Cloud > Router Cloud > Firewall > GCP dan AWS
+
+Block Internet
+Core > router internet > Firewall > User dan Ikom
+
+
+IP (alamat rumah)
+MAC Address buat fisiknya dan hanya untuk lokal.
+Misal nih A ke B, jadi IP me
